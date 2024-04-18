@@ -50,7 +50,7 @@ const products = [
 	},
 ]
 
-export default function page() {
+export default function Page() {
 
 	const handleSubmit = (e : any) => {
 		e.preventDefault()

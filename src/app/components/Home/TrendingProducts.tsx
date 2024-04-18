@@ -22,9 +22,12 @@ const TrendingProducts = () => {
 					trendingProducts.map((product) => (
 
 						<Link href={
-							`/trending/products/${
+								`/trending/products/${
+									product.id
+								}`
+							}
+							key={
 								product.id
-							}`
 						}>
 							<div key={
 									product.id
