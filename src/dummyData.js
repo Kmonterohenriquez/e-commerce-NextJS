@@ -53,7 +53,7 @@ export const navigation = {
 							href: '#'
 						}, {
 							name: 'Browse All',
-							href: '/men/products'
+							href: '/women/products'
 						},
 					]
 				}, {
@@ -153,7 +153,7 @@ export const navigation = {
 							href: '#'
 						}, {
 							name: 'Browse All',
-							href: '#'
+							href: '/men/products'
 						},
 					]
 				}, {
@@ -264,14 +264,6 @@ export const footerNavigation = {
 	company: [
 		{
 			name: 'Who we are',
-			href: '#'
-		},
-		{
-			name: 'Sustainability',
-			href: '#'
-		},
-		{
-			name: 'Press',
 			href: '#'
 		},
 		{
