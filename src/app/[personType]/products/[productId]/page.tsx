@@ -137,7 +137,7 @@ const Page = () => {
                 alt={oneProduct.name}
                 className="lg:col-span-2 lg:row-span-2 rounded-lg"
               />
-              {/* <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 lg:gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 lg:gap-8">
                 {oneProduct.images.map((image, i) => (
                   <img
                     key={i}
@@ -146,7 +146,7 @@ const Page = () => {
                     className="hidden lg:blockrounded-lg"
                   />
                 ))}{" "}
-              </div> */}
+              </div>
             </div>
 
             <div className="mt-8 lg:col-span-5">
