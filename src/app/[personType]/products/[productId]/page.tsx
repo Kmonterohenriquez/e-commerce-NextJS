@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "next/navigation";
 import { getOneProduct } from "@/lib/slices/productSlice";
 import { AppDispatch, RootState } from "@/lib/redux/store";
-import TopNavigation from "@/app/components/Common/TopNavigation";
+import TopNavigation from "@/components/Common/TopNavigation";
 
 const Page = () => {
   function classNames(...classes: any) {

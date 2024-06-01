@@ -30,13 +30,13 @@ const TopNavigation = () => {
           >
             <span className="absolute -inset-0.5" />
             <span className="sr-only">Open menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-          </button>
+          <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+        </button>
 
           {/* Logo */}
           <div className="flex lg:ml-0 pr-8">
             <Link href="/">
-              D<span className="sr-only">Your Company</span>
+              <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto"
                 style={{

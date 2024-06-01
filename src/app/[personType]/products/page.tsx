@@ -4,10 +4,10 @@ import { Dialog, Disclosure, Tab, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { MinusIcon, PlusIcon } from "@heroicons/react/20/solid";
 import { navigation, subCategories, filters } from "@/dummyData";
-import ProductsGrid from "../../components/Products/ProductsGrid";
-import FooterNavigation from "../../components/Common/FooterNavigation";
-import Header from "../../components/Products/Header";
-import TopNavigation from "../../components/Common/TopNavigation";
+import ProductsGrid from "@/components/Products/ProductsGrid";
+import FooterNavigation from "@/components/Common/FooterNavigation";
+import Header from "@/components/Products/Header";
+import TopNavigation from "@/components/Common/TopNavigation";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "@/lib/redux/store";
 import { getMenProducts, getWomenProducts } from "@/lib/slices/productSlice";
@@ -34,7 +34,7 @@ export default function Example() {
       dispatch(getWomenProducts());
     }
   };
-
+  console.log("ENV variables  ", process.env.NEXT_PUBLIC_ENV);
   console.log("men Products", menProducts);
   console.log("women Products", womenProducts);
   useEffect(() => {

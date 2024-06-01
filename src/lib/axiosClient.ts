@@ -7,7 +7,14 @@ import axios, { AxiosRequestConfig } from "axios";
 //    let basePath ='';
 
 // }
-const basePath = "http://localhost:8080/";
+let basePath = "";
+if (process.env.NEXT_PUBLIC_ENV === "production") {
+  basePath = "https://be-ecommerce-nextjs.onrender.com/";
+} else if (process.env.NEXT_PUBLIC_ENV === "development") {
+  basePath = "http://localhost:8080/";
+}
+
+
 const axiosInstance = axios.create({
   baseURL: basePath + "api/",
   headers: {
