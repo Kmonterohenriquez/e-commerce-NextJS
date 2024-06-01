@@ -39,14 +39,14 @@ const ProductsGrid = () => {
             </div>
             <h3 className="mt-4 font-medium text-gray-900">{product.name}</h3>
             {/* <p className="italic text-gray-500">{product.availability}</p> */}
+            hola mundo
             <p className="mt-2 font-medium text-gray-900">$ {product.price}</p>
+            <p className="mt-2 font-medium text-gray-900"> hola mundo</p>
           </Link>
         ))}
       </div>
     ) : (
-      <h1 className="text-gray-900 text-center bg-red-800 w-full">
-        No items found
-      </h1>
+      <h1 className="text-gray-900 text-center w-full">No items found</h1>
     );
 
   return test;

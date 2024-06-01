@@ -141,9 +141,9 @@ const Page = () => {
                 {oneProduct.images.map((image, i) => (
                   <img
                     key={i}
-                    src={image.src}
-                    alt={image.alt}
-                    className="hidden lg:blockrounded-lg"
+                    src={image.src as string}
+                    alt={image.alt as string}
+                    className="lg:blockrounded-lg"
                   />
                 ))}{" "}
               </div>
